@@ -13,19 +13,19 @@ function fetchSome() {
 
 fetchSome()
     .then(data => {
-        console.log("Data: ", data)
+        console.log("Data: ", data);
     })
-    .catch(e => console.error(e))
+    .catch(e => console.error(e));
 
 async function fetchSomeAsync() {
-    console.log("Async fetch started")
+    console.log("Async fetch started");
     try {
-        const respone = await fetch(url)
-        const data = await respone.json()
-        console.log("Data: ", data)
+        const respone = await fetch(url);
+        const data = await respone.json();
+        console.log("Data: ", data);
     } catch (e) {
-        console.error(e)
+        console.error(e);
     }
 }
 
-fetchSomeAsync()
+fetchSomeAsync();
